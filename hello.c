@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+    Um codigo inicial para manter as boas tradições da programação.
+*/
 
 int main(){
     
