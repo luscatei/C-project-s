@@ -12,17 +12,16 @@ int main(){
 
     int tree = 0;
 
+    /*
+        I built a dynamic version of the program above with user input implementation, input type validation, and dynamic printing of the tree size based on the input. Using loops like 'do while' and 'for,' I defined the display.
+    */
     do {
         printf("Insert the size of the tree: ");
-        if (scanf("%i", &tree) != 1){   // Verify the input
+        if (scanf("%i", &tree) != 1){   // Verify the input.
             printf("Invalid input. Try again\n");
-            while (getchar() != '\n');  // Clear keybord buffer
+            while (getchar() != '\n');  // Clear keybord buffer.
         }
-    } while (tree <= 0);                // Run the program if the input is invalid
-
-
-
-
+    } while (tree <= 0);                // Run the program if the input is invalid.
     for (int i = 1; i <= tree; i++) {
         
         for (int j = 0; j < tree - i; j++) {
